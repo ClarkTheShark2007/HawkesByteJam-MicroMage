@@ -28,4 +28,11 @@ public class TestEnemy : Enemy
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
     }
+
+    private void OnTriggerEnter2D (Collider2D collision) 
+    {
+        //if(collision.tag == "Player") 
+        {
+        }
+    }
 }
