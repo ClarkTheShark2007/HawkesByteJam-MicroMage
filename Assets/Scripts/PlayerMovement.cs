@@ -17,10 +17,26 @@ public class PlayerMovement : MonoBehaviour
     private const string _lastVertical = "LastVertical";
 
 
+    private void OnEnable ()
+    {
+        PlayerHealth.OnPlayerDeath += DisablePlayerMovement;
+    }
+
+
+    private void OnDisable ()
+    {
+        PlayerHealth.OnPlayerDeath -= DisablePlayerMovement;
+    }
+
     private void Awake() 
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+    }
+
+    private void Start() 
+    {
+        EnablePlayerMovement();
     }
 
     private void Update() 
@@ -37,5 +53,15 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetFloat(_lastHorizontal, _movement.x);
             _animator.SetFloat(_lastVertical, _movement.y);
         }
+    }
+
+    private void DisablePlayerMovement() 
+    {
+        _rb.bodyType = RigidbodyType2D.Static;
+    }
+
+    private void EnablePlayerMovement() 
+    {
+        _rb.bodyType = RigidbodyType2D.Dynamic;
     }
 }
