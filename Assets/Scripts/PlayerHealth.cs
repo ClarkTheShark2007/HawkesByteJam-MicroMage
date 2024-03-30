@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Health : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
+    public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDeath;
+
     public int maxHealth;
     public int currentHealth;
 
@@ -13,8 +17,9 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    void TakeDamage(int amount) 
+    public void TakeDamage(int damage)  
     {
-        currentHealth -= amount;
+        currentHealth -= damage;
+        OnPlayerDamaged?.Invoke();
     }
 }
