@@ -3,10 +3,11 @@ using UnityEngine;
 public class MagicProjectile : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    public float projectileSpeed = 10f;
+    public float projectileSpeed = 5f;
     public float cooldownTime = 3f; // Cooldown time in seconds
-    public float projectileDuration = 20f; // Duration of the projectile in seconds
+    public float projectileDuration = 2f; // Duration of the projectile in seconds
     public float spawnOffset = 1f; // Offset distance from the player
+    public float forceMagnitude = 10f; // Magnitude of the force applied to the projectile
 
     private float lastFireTime; // Time when the spell was last fired
 
@@ -27,7 +28,7 @@ public class MagicProjectile : MonoBehaviour
             projectile.AddComponent<ProjectileCollisionHandler>();
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            rb.velocity = direction * projectileSpeed;
+            rb.AddForce(direction * forceMagnitude, ForceMode2D.Impulse); // Apply force to the projectile
 
             Destroy(projectile, projectileDuration); // Destroy the projectile after the specified duration
 
