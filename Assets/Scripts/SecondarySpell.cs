@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MagicProjectile : MonoBehaviour
+public class SecondarySpell : MonoBehaviour
 {
     public GameObject projectilePrefab;
     public float projectileSpeed = 5f;
@@ -13,7 +13,7 @@ public class MagicProjectile : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
+        if (Input.GetMouseButtonDown(1) && Time.time >= lastFireTime + cooldownTime) // Right mouse button clicked and cooldown is over
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
