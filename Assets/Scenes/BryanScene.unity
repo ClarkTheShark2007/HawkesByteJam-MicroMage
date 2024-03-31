@@ -26008,7 +26008,7 @@ Transform:
   m_GameObject: {fileID: 4071988985966608999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -12.7, y: -3.49, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26339,11 +26339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1920688192}
+  numProjectiles: 20
   projectileSpeed: 5
   cooldownTime: 1
   projectileDuration: 2
-  spawnOffset: 1
-  forceMagnitude: 10
+  circleRadius: 1.5
   lastFireTime: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
