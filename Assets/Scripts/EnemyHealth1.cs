@@ -33,7 +33,9 @@ public class EnenmyHealth : MonoBehaviour
         if (currentHealth <= 0) 
         {
             aud.Play();
-            Destroy(gameObject);
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, 1f);
             OnEnemyDeath?.Invoke();
         }
     }

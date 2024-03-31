@@ -20017,8 +20017,8 @@ MonoBehaviour:
   baseAttack: 1
   moveSpeed: 1.5
   target: {fileID: 701365724077996074}
-  chaseRaidus: 10
-  attackRadius: 2
+  chaseRaidus: 20
+  attackRadius: 1
   homePosition: {fileID: 0}
 --- !u!114 &1569688388
 MonoBehaviour:
