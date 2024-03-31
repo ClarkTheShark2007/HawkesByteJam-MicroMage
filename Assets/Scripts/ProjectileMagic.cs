@@ -9,7 +9,7 @@ public class MagicProjectile : MonoBehaviour
     public float spawnOffset = 1f; // Offset distance from the player
     public float forceMagnitude = 10f; // Magnitude of the force applied to the projectile
 
-    private float lastFireTime; // Time when the spell was last fired
+    public float lastFireTime; // Time when the spell was last fired
 
     private void Update()
     {
@@ -29,6 +29,10 @@ public class MagicProjectile : MonoBehaviour
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             rb.AddForce(direction * forceMagnitude, ForceMode2D.Impulse); // Apply force to the projectile
+
+            // Calculate the rotation angle based on the direction and add 90 degrees
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f;
+            projectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             Destroy(projectile, projectileDuration); // Destroy the projectile after the specified duration
 
