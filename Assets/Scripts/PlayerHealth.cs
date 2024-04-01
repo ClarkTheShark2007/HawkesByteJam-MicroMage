@@ -14,7 +14,10 @@ public class PlayerHealth : MonoBehaviour
 
     private Animator anim;
 
-    AudioSource aud;
+    private BoxCollider2D hitbox;
+
+    public AudioSource death;
+    public AudioSource hit;
 
     // Start is called before the first frame update
     void Start()
@@ -22,19 +25,23 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         OnPlayerDamaged?.Invoke();
         anim = GetComponent<Animator>();
-        aud = GetComponent<AudioSource>();
+        hitbox = GetComponent<BoxCollider2D>();
+
     }
 
     public void TakeDamage(int damage)  
     {
         currentHealth -= damage;
         OnPlayerDamaged?.Invoke();
+        hit.Play();
 
         if (currentHealth <= 0) 
         {
             anim.SetTrigger("Gameover");
             GetComponent<PlayerMovement>().enabled = false;
-            aud.Play();
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            death.Play();
+            hitbox.enabled = false;
             OnPlayerDeath?.Invoke();
         }
     }

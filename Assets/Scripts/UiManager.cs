@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Scripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,6 +31,11 @@ public class UiManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         gameOverMenu.SetActive(true);
+    }
+
+    public void Menu() 
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

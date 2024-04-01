@@ -10,6 +10,8 @@ public class Boss : MonoBehaviour
 
     public GameObject redEnemy1;
     public GameObject redEnemy2;
+
+    public GameObject Walls;
     private void OnEnable() 
     {
         EnenmyHealth.OnEnemyDeath += MiniBoss;
@@ -25,6 +27,7 @@ public class Boss : MonoBehaviour
         blueEnemy1.SetActive(true);
         blueEnemy2.SetActive(true);
         redEnemy1.SetActive(true);
-        redEnemy2.SetActive(true);        
+        redEnemy2.SetActive(true);
+        Walls.SetActive(false);          
     }
 }
