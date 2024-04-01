@@ -1,19 +1,11 @@
 using UnityEngine;
 
-public class PrimarySpell : MonoBehaviour
+public class Bolt : Spell
 {
-    public GameObject projectilePrefab;
-    public float projectileSpeed = 5f;
-    public float cooldownTime = 3f; // Cooldown time in seconds
-    public float projectileDuration = 2f; // Duration of the projectile in seconds
-    public float spawnOffset = 1f; // Offset distance from the player
-    public float forceMagnitude = 10f; // Magnitude of the force applied to the projectile
-
-    public float lastFireTime; // Time when the spell was last fired
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
+        if (casting && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
@@ -35,7 +27,7 @@ public class PrimarySpell : MonoBehaviour
             projectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             Destroy(projectile, projectileDuration); // Destroy the projectile after the specified duration
-
+            casting = false;
             lastFireTime = Time.time; // Update last fire time
         }
     }
