@@ -408,7 +408,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1279683999504769405, guid: ecc0564dc92adb645a37c0c20a520362, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 928807485}
   m_SourcePrefab: {fileID: 100100000, guid: ecc0564dc92adb645a37c0c20a520362, type: 3}
 --- !u!1 &77948387
 GameObject:
@@ -1007,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &331985642
 Transform:
   m_ObjectHideFlags: 0
@@ -2556,6 +2559,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraChange: {x: 0, y: 15.15}
   playerChange: {x: 0, y: 2, z: 0}
+--- !u!1 &928807475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1279683999504769405, guid: ecc0564dc92adb645a37c0c20a520362, type: 3}
+  m_PrefabInstance: {fileID: 42184668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &928807485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928807475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf0ecc755e62c844bcc3b2b97231acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 1
 --- !u!1 &1254838437
 GameObject:
   m_ObjectHideFlags: 0
