@@ -14,11 +14,11 @@ public class inputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && Time.time >= primary.lastFireTime + primary.cooldownTime)
+        if(Input.GetMouseButtonDown(0))
         {
             primary.castSpell();
         }
-         if(Input.GetMouseButtonDown(1) && Time.time >= secondary.lastFireTime + secondary.cooldownTime)
+         if(Input.GetMouseButtonDown(1))
         {
            secondary.castSpell();
         }
