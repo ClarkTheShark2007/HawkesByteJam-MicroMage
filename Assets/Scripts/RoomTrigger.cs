@@ -5,6 +5,7 @@ using UnityEngine;
 public class RoomTrigger : MonoBehaviour
 {
     public GameObject Walls;
+    public GameObject Roomtrigger;
 
     AudioSource aud;
 
@@ -17,5 +18,12 @@ public class RoomTrigger : MonoBehaviour
     {
         Walls.SetActive(true);
         aud.Play();
+        StartCoroutine(WaitToDestroy());
+    }
+
+    IEnumerator WaitToDestroy()
+    {
+        yield return new WaitForSeconds(1);
+        Roomtrigger.SetActive(false);
     }
 }
