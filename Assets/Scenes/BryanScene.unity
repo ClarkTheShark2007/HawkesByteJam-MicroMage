@@ -1588,7 +1588,6 @@ GameObject:
   - component: {fileID: 714898189}
   - component: {fileID: 714898188}
   - component: {fileID: 714898194}
-  - component: {fileID: 714898195}
   m_Layer: 0
   m_Name: AlastorMagic
   m_TagString: Weapon
@@ -1781,21 +1780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 1
---- !u!111 &714898195
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714898187}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &744907742
 GameObject:
   m_ObjectHideFlags: 0
@@ -25118,7 +25102,6 @@ GameObject:
   - component: {fileID: 1920688196}
   - component: {fileID: 1920688195}
   - component: {fileID: 1920688194}
-  - component: {fileID: 1920688193}
   m_Layer: 0
   m_Name: Secondary
   m_TagString: Weapon
@@ -25126,21 +25109,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!111 &1920688193
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920688192}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &1920688194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25176,7 +25144,7 @@ Animator:
   m_GameObject: {fileID: 1920688192}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eff27907fafb10c48956cc0b76e7d9cb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -25223,7 +25191,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -25300,7 +25268,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -198421071, guid: 6553372ea24051b47980c099b50ba60a, type: 3}
+  m_Sprite: {fileID: -697954170, guid: 13e9193d93ef16d45a01396641b44400, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25321,7 +25289,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -85.4176, y: 4.9597, z: 0}
-  m_LocalScale: {x: 1.36175, y: 1.2612, z: 0.5}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
