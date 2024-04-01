@@ -1,20 +1,10 @@
 using UnityEngine;
 
-public class SecondarySpell : MonoBehaviour
+public class ConeShot : Spell
 {
-    public GameObject projectilePrefab;
-    public int numProjectiles = 5; // Number of projectiles to fire
-    public float projectileSpeed = 5f;
-    public float cooldownTime = 3f; // Cooldown time in seconds
-    public float projectileDuration = 2f; // Duration of the projectile in seconds
-    public float spreadAngle = 30f; // Spread angle for the projectiles
-    public float spawnOffset = 1f; // Offset distance from the player
-    
-    public float lastFireTime; // Time when the spell was last fired (public for demonstration purposes)
-
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1) && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
+        if (casting && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
@@ -41,7 +31,7 @@ public class SecondarySpell : MonoBehaviour
 
                 Destroy(projectile, projectileDuration); // Destroy the projectile after the specified duration
             }
-
+            casting = false;
             lastFireTime = Time.time; // Update last fire time
         }
     }

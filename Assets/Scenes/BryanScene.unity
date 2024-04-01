@@ -3110,6 +3110,7 @@ GameObject:
   - component: {fileID: 1224413251}
   - component: {fileID: 1224413250}
   - component: {fileID: 1224413255}
+  - component: {fileID: 1224413257}
   - component: {fileID: 1224413256}
   m_Layer: 5
   m_Name: Canvas
@@ -3223,12 +3224,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224413249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70ae4153a59cf3b40a5adc4ca4fbd11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PrimaryCooldownText: {fileID: 382848102}
+  magicProjectile: {fileID: 0}
 --- !u!114 &1224413256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3241,7 +3243,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9c9ab6f7ed6ca4b94c98f0d62b6cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecondaryCooldownText: {fileID: 1870924976}
+  spellIndex: 1
+  cooldownText: {fileID: 1870924976}
+--- !u!114 &1224413257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224413249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9c9ab6f7ed6ca4b94c98f0d62b6cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellIndex: 0
+  cooldownText: {fileID: 382848102}
 --- !u!1 &1252099386
 GameObject:
   m_ObjectHideFlags: 0
@@ -25386,7 +25403,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -85.4176, y: 4.9597, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.164125, y: 0.164125, z: 0.164125}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -26189,7 +26206,8 @@ GameObject:
   - component: {fileID: 1334214795466072559}
   - component: {fileID: 5867074321208132808}
   - component: {fileID: 5867074321208132809}
-  - component: {fileID: 5867074321208132810}
+  - component: {fileID: 5867074321208132811}
+  - component: {fileID: 5867074321208132812}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -26385,13 +26403,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 714898187}
+  numProjectiles: 5
   projectileSpeed: 10
   cooldownTime: 0.5
   projectileDuration: 20
+  spreadAngle: 30
   spawnOffset: 1
   forceMagnitude: 10
+  circleRadius: 1.5
   lastFireTime: 0
---- !u!114 &5867074321208132810
+--- !u!114 &5867074321208132811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26400,7 +26421,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 4071988985966608999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccbdef0daa3374c449df20701beded9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 55adea4c0b7a2704989e85990702001e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1920688192}
+  numProjectiles: 5
+  projectileSpeed: 5
+  cooldownTime: 3
+  projectileDuration: 2
+  spreadAngle: 30
+  spawnOffset: 1
+  forceMagnitude: 10
+  circleRadius: 1.5
+  lastFireTime: 0
+--- !u!114 &5867074321208132812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071988985966608999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594703fa89df9e54fada675b95d87545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
