@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BlueEye
+  m_Name: RedEye
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1033722018, guid: a1facb98ec302d443b35be0fa766b21a, type: 3}
+      value: {fileID: 599962307, guid: 88916a4c35caf3f4f8c195fe704cf51a, type: 3}
     - time: 0.33333334
-      value: {fileID: 1611893206, guid: a1facb98ec302d443b35be0fa766b21a, type: 3}
+      value: {fileID: 863130464, guid: 88916a4c35caf3f4f8c195fe704cf51a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1033722018, guid: a1facb98ec302d443b35be0fa766b21a, type: 3}
-    - {fileID: 1611893206, guid: a1facb98ec302d443b35be0fa766b21a, type: 3}
+    - {fileID: 599962307, guid: 88916a4c35caf3f4f8c195fe704cf51a, type: 3}
+    - {fileID: 863130464, guid: 88916a4c35caf3f4f8c195fe704cf51a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
