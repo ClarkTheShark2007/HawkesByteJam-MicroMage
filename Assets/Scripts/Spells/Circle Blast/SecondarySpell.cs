@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class SecondarySpell : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class SecondarySpell : MonoBehaviour
     public float cooldownTime = 3f; // Cooldown time in seconds
     public float projectileDuration = 2f; // Duration of the projectile in seconds
     public float circleRadius = 1.5f; // Radius of the circle path
-    public float lastFireTime; // Time when the spell was last fired (public for demonstration purposes)
+    public float lastFireTime; // Time when the spell was last fired 
 
     private void Update()
     {
@@ -46,4 +46,4 @@ public class SecondarySpell : MonoBehaviour
             lastFireTime = Time.time; // Update last fire time
         }
     }
-}
+}*/
