@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     public GameObject gameOverMenu;
+
+    public AudioSource bossTheme;
+    public AudioSource mainTheme;
+
+
     private void OnEnable() 
     {
         PlayerHealth.OnPlayerDeath += EnableGameOverMenu;
@@ -25,6 +30,8 @@ public class UiManager : MonoBehaviour
     public void EnableGameOverMenu() 
     {
         StartCoroutine(WaitForFunction());
+        bossTheme.Stop();
+        mainTheme.Stop();
     }
     
     IEnumerator WaitForFunction()
