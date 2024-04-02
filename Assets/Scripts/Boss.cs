@@ -12,6 +12,13 @@ public class Boss : MonoBehaviour
     public GameObject redEnemy2;
 
     public GameObject Walls;
+
+    public AudioSource theme;
+
+    void Start() 
+    {
+    }
+
     private void OnEnable() 
     {
         EnenmyHealth.OnEnemyDeath += MiniBoss;
