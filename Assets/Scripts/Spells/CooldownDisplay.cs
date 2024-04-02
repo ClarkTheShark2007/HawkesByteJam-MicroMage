@@ -8,12 +8,14 @@ public class CooldownDisplay : MonoBehaviour
 
 
     public TextMeshProUGUI cooldownText; // Reference to the TextMeshProUGUI component
-
+    private InventoryManager inventoryManager;
     private Spell magicProjectile; // Reference to the MagicProjectile script
 
      private void Start()
     {
-        magicProjectile = GameObject.FindWithTag("Player")?.GetComponents<Spell>()[spellIndex];
+        inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
+        magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);
+        Debug.Log(magicProjectile);
         if (magicProjectile != null) cooldownText.text = "Ready";
     }
 

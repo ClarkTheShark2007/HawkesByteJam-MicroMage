@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -12,7 +11,7 @@ public class InventoryManager : MonoBehaviour
     private Spell[] spells;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Spell coneShot, bolt;
         bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[0];

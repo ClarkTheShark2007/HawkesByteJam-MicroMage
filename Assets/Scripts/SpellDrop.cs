@@ -27,6 +27,7 @@ public class SpellDrop : MonoBehaviour
         if(other.gameObject.tag == "Player") 
         {
             inventoryManager.setSpellAtIndex(spellDrops[0], 0);
+            Destroy(gameObject, 1f);
         }
     }
 }
