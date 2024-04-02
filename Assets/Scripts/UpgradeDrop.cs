@@ -1,24 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Events;
 using UnityEngine;
 
 public class UpgradeDrop : MonoBehaviour
 {
+    private InventoryManager inventoryManager;
+    
     // Start is called before the first frame update
     void Start()
     {
-        EnenmyHealth.OnEnemyDeath += spawnLoot;
+        inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void spawnLoot()
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("DED: " + this.gameObject.name);
+        if(other.gameObject.tag == "Player") 
+        {
+            for(int i = 0; i != 2; i++)
+            {
+                inventoryManager.getSpellAtIndex(i).upgradeSpell();
+            }
+            Destroy(gameObject);
+        }
     }
 }

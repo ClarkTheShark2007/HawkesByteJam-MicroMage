@@ -1953,7 +1953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa94c9ddfa75e14192819a26d48e3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
+  spellIndex: 0
 --- !u!82 &714898195
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3309,6 +3309,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 649421691}
+  levelScreen: {fileID: 0}
+  Player: {fileID: 0}
   bossTheme: {fileID: 0}
   mainTheme: {fileID: 0}
 --- !u!114 &1224413251
@@ -20611,7 +20613,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -20640,6 +20642,7 @@ GameObject:
   - component: {fileID: 1402608172}
   - component: {fileID: 1402608171}
   - component: {fileID: 1402608170}
+  - component: {fileID: 1402608175}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -20749,6 +20752,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402608175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402608169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1475077054
 GameObject:
   m_ObjectHideFlags: 0
@@ -21490,7 +21537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  dropChance: 818
   itemDrops:
   - {fileID: 399125295}
   - {fileID: 1325054083}
@@ -25594,7 +25641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa94c9ddfa75e14192819a26d48e3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 9
+  spellIndex: 1
 --- !u!114 &1920688195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25761,7 +25808,7 @@ Transform:
   m_GameObject: {fileID: 1920688192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.4176, y: 4.9597, z: 0}
+  m_LocalPosition: {x: -85.4176, y: 5.11, z: 0}
   m_LocalScale: {x: 0.164125, y: 0.164125, z: 0.164125}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26770,8 +26817,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 714898187}
-  cooldownTime: 0.5
-  lastFireTime: 0
+  projectileSpeed: 5
+  cooldownTime: 1
+  damageAmount: 2
 --- !u!114 &5867074321208132811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26785,8 +26833,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1920688192}
+  projectileSpeed: 5
   cooldownTime: 3
-  lastFireTime: 0
+  damageAmount: 4
 --- !u!114 &5867074321208132813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26812,8 +26861,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1920688192}
-  cooldownTime: 3
-  lastFireTime: 0
+  projectileSpeed: 5
+  cooldownTime: 4
+  damageAmount: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
