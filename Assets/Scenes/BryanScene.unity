@@ -26155,6 +26155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 1
+  death: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!95 &2750952203419906904
 Animator:
   serializedVersion: 5
@@ -26207,7 +26209,7 @@ GameObject:
   - component: {fileID: 5867074321208132808}
   - component: {fileID: 5867074321208132809}
   - component: {fileID: 5867074321208132811}
-  - component: {fileID: 5867074321208132812}
+  - component: {fileID: 5867074321208132813}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -26403,14 +26405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 714898187}
-  numProjectiles: 5
-  projectileSpeed: 10
   cooldownTime: 0.5
-  projectileDuration: 20
-  spreadAngle: 30
-  spawnOffset: 1
-  forceMagnitude: 10
-  circleRadius: 1.5
   lastFireTime: 0
 --- !u!114 &5867074321208132811
 MonoBehaviour:
@@ -26425,16 +26420,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1920688192}
-  numProjectiles: 5
-  projectileSpeed: 5
   cooldownTime: 3
-  projectileDuration: 2
-  spreadAngle: 30
-  spawnOffset: 1
-  forceMagnitude: 10
-  circleRadius: 1.5
   lastFireTime: 0
---- !u!114 &5867074321208132812
+--- !u!114 &5867074321208132813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26443,7 +26431,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4071988985966608999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 594703fa89df9e54fada675b95d87545, type: 3}
+  m_Script: {fileID: 11500000, guid: 56d04c8f102a1f446a1d0188846ab2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807

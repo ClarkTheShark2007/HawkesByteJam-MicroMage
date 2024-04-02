@@ -7,7 +7,7 @@ public class Spell : MonoBehaviour
     {
         if(Time.time >= lastFireTime + cooldownTime)
         {
-        this.casting = true;
+            this.casting = true;
         }
     }
 

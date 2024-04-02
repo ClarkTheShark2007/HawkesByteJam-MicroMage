@@ -5,20 +5,34 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
+ 
     public static Vector2 Movement;
+    private InputAction moveAction;
+    private PlayerInput playerInput;
+    private InventoryManager inventoryManager;
 
-    private InputAction _moveAction;
-    private PlayerInput _playerInput;
 
     private void Awake() 
     {
-        _playerInput = GetComponent<PlayerInput>();
+        playerInput = GetComponent<PlayerInput>();
+        moveAction = playerInput.actions["Move"];
 
-        _moveAction = _playerInput.actions["Move"];
+        inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
     }
 
     private void Update() 
     {
-        Movement = _moveAction.ReadValue<Vector2>();
+        Movement = moveAction.ReadValue<Vector2>();
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            inventoryManager.getSpellAtIndex(0).castSpell();
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+          inventoryManager.getSpellAtIndex(1).castSpell();
+        }
     }
+    
+
 }
