@@ -9,10 +9,13 @@ public class EnenmyHealth : MonoBehaviour
     public static event Action OnEnemyDamaged;
     public static event Action OnEnemyDeath;
 
-    public int maxHealth;
-    public int currentHealth;
+    [SerializeField]private int maxHealth;
+    [SerializeField]private int currentHealth;
 
-    private Animator anim;
+    [SerializeField]private int dropChance;
+    [SerializeField]private GameObject[] itemDrops;
+
+    [SerializeField]private Animator anim;
 
     AudioSource aud;
 
@@ -32,11 +35,28 @@ public class EnenmyHealth : MonoBehaviour
 
         if (currentHealth <= 0) 
         {
-            aud.Play();
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<Collider2D>().enabled = false;
-            Destroy(gameObject, 1f);
-            OnEnemyDeath?.Invoke();
+            die();
+        }
+    }
+    private void die()
+    {
+        aud.Play();
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        OnEnemyDeath?.Invoke();
+        dropItem();
+        Destroy(gameObject, 1f);
+        
+    }
+    private void dropItem()
+    {
+        if(UnityEngine.Random.Range(0, dropChance) == 1)
+        {
+            Instantiate(itemDrops[0], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+        }
+        else
+        {
+             Instantiate(itemDrops[1], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 }

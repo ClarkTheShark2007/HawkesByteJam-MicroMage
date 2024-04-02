@@ -8,6 +8,8 @@ public class InputManager : MonoBehaviour
  
     public static Vector2 Movement;
     private InputAction moveAction;
+    private InputAction primarySpellCast;
+    private InputAction secondarySpellCast;
     private PlayerInput playerInput;
     private InventoryManager inventoryManager;
 
@@ -16,7 +18,8 @@ public class InputManager : MonoBehaviour
     {
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["Move"];
-
+        primarySpellCast = playerInput.actions["primarySpellCast"];
+        secondarySpellCast = playerInput.actions["secondarySpellCast"];
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
     }
 
@@ -24,11 +27,11 @@ public class InputManager : MonoBehaviour
     {
         Movement = moveAction.ReadValue<Vector2>();
 
-        if(Input.GetMouseButtonDown(0))
+        if(primarySpellCast.WasPressedThisFrame())
         {
             inventoryManager.getSpellAtIndex(0).castSpell();
         }
-        if(Input.GetMouseButtonDown(1))
+        if(secondarySpellCast.WasPressedThisFrame())
         {
           inventoryManager.getSpellAtIndex(1).castSpell();
         }

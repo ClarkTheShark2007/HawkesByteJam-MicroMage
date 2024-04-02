@@ -39,4 +39,16 @@ public class InventoryManager : MonoBehaviour
         }
 
     }
+    public void setSpellAtIndex(Spell addSpell, int spellIndex)
+    {
+        if(spellIndex < spells.Length)
+        {
+            spells[spellIndex] = addSpell;
+            return;
+        }
+        else
+        {
+            return;
+        }
+    }
 }
