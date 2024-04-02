@@ -3,12 +3,20 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
 
+    private static readonly float UPGRADE_PERCENT = 0.1f;
+    
     public void castSpell()
     {
         if(Time.time >= lastFireTime + cooldownTime)
         {
             this.casting = true;
         }
+    }
+
+    public void upgradeSpell()
+    {
+        this.projectileSpeed = this.projectileSpeed*(1+UPGRADE_PERCENT);
+        this.cooldownTime = this.cooldownTime*(1-UPGRADE_PERCENT);
     }
 
     public GameObject projectilePrefab;

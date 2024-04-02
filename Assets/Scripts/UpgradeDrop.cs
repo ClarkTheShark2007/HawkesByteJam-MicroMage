@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
 
-public class Loot : MonoBehaviour
+public class UpgradeDrop : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

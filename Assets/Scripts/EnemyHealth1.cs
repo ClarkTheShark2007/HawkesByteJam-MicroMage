@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEditor;
 
 public class EnenmyHealth : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class EnenmyHealth : MonoBehaviour
     [SerializeField]private GameObject[] itemDrops;
 
     [SerializeField]private Animator anim;
-
+    
+    private Boolean backup = false;
     AudioSource aud;
 
     // Start is called before the first frame update
@@ -50,13 +52,18 @@ public class EnenmyHealth : MonoBehaviour
     }
     private void dropItem()
     {
-        if(UnityEngine.Random.Range(0, dropChance) == 1)
+        if(!backup)
         {
-            Instantiate(itemDrops[0], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-        }
-        else
-        {
-             Instantiate(itemDrops[1], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+            if(UnityEngine.Random.Range(0, dropChance) == 1)
+                {
+                    Instantiate(itemDrops[0], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                    backup = true;
+                }
+                else
+                {
+                    Instantiate(itemDrops[1], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                    backup = true;
+                }
         }
     }
 }
