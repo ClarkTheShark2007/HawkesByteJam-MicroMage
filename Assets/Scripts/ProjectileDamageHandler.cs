@@ -2,7 +2,14 @@ using UnityEngine;
 
 public class ProjectileDamageHandler : MonoBehaviour
 {
-    public int damageAmount = 1; // Damage amount caused by the projectile
+    [SerializeField] private int spellIndex;
+    private InventoryManager inventoryManager;
+    private int damageAmount;
+    void Start()
+    {
+        inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
+        damageAmount = inventoryManager.getSpellAtIndex(spellIndex).damageAmount;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

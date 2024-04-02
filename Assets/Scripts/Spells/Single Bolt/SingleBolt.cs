@@ -20,7 +20,7 @@ public class Bolt : Spell
             projectile.AddComponent<ProjectileCollisionHandler>();
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            rb.AddForce(direction * forceMagnitude, ForceMode2D.Impulse); // Apply force to the projectile
+            rb.velocity = direction * projectileSpeed; 
 
             // Calculate the rotation angle based on the direction and add 90 degrees
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f;
@@ -31,4 +31,5 @@ public class Bolt : Spell
             lastFireTime = Time.time; // Update last fire time
         }
     }
+    
 }

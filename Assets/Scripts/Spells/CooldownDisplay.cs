@@ -14,13 +14,13 @@ public class CooldownDisplay : MonoBehaviour
      private void Start()
     {
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
-        magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);
-        Debug.Log(magicProjectile);
+        magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);    
         if (magicProjectile != null) cooldownText.text = "Ready";
     }
 
     private void Update()
     {
+            magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);
             // Update the cooldown UI text based on remaining cooldown time
             float remainingCooldown = Mathf.Max(0f, magicProjectile.lastFireTime + magicProjectile.cooldownTime - Time.time);
             cooldownText.text = remainingCooldown.ToString("F1"); // Display remaining cooldown time with one decimal place
