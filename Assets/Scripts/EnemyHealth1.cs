@@ -12,6 +12,7 @@ public class EnenmyHealth : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    public GameObject[] itemDrops;
     private Animator anim;
 
     AudioSource aud;
@@ -32,11 +33,24 @@ public class EnenmyHealth : MonoBehaviour
 
         if (currentHealth <= 0) 
         {
-            aud.Play();
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<Collider2D>().enabled = false;
-            Destroy(gameObject, 1f);
-            OnEnemyDeath?.Invoke();
+            die();
+        }
+    }
+    private void die()
+    {
+        aud.Play();
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        OnEnemyDeath?.Invoke();
+        dropItem();
+        Destroy(gameObject, 1f);
+        
+    }
+    private void dropItem()
+    {
+        for (int i = 0; i < itemDrops.Length; i++)
+        {
+            Instantiate(itemDrops[i], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 }
