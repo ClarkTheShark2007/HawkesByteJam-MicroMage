@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource death;
     public AudioSource hit;
 
+    public AudioSource main;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,7 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<PlayerMovement>().enabled = false;
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             death.Play();
+            hit.Stop();
             hitbox.enabled = false;
             OnPlayerDeath?.Invoke();
         }
