@@ -46,6 +46,7 @@ public class EnenmyHealth : MonoBehaviour
     {
         aud.Play();
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Rigidbody2D>().simulated = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
         OnEnemyDeath?.Invoke();
         dropItem();
