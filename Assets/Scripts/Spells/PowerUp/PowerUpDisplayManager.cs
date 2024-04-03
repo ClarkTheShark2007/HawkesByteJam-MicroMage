@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class CooldownDisplay : MonoBehaviour
+public class PowerUpDisplayManager : MonoBehaviour
 {
     [SerializeField]
     private int spellIndex=0;
