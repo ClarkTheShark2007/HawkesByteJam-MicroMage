@@ -45,4 +45,13 @@ public class PlayerHealth : MonoBehaviour
             OnPlayerDeath?.Invoke();
         }
     }
+
+    public void Heal(int heal)
+    {
+        currentHealth += heal;
+        OnPlayerDamaged?.Invoke();
+        if(currentHealth>maxHealth){
+            currentHealth=maxHealth;
+        }
+    }
 }

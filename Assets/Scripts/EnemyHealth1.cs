@@ -13,7 +13,9 @@ public class EnenmyHealth : MonoBehaviour
     [SerializeField]private int maxHealth;
     [SerializeField]private int currentHealth;
 
-    [SerializeField]private int dropChance;
+    [SerializeField]private int spellDropChance = 101;
+    [SerializeField]private int upgradeDropChance = 11;
+    [SerializeField]private int heartDropChance = 6;
     [SerializeField]private GameObject[] itemDrops;
 
     [SerializeField]private Animator anim;
@@ -54,15 +56,26 @@ public class EnenmyHealth : MonoBehaviour
     {
         if(!backup)
         {
-            if(UnityEngine.Random.Range(0, dropChance) == 1)
+            if(UnityEngine.Random.Range(0, spellDropChance) == 1)
                 {
                     Instantiate(itemDrops[0], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
                     backup = true;
                 }
-                else
+            else
                 {
-                    Instantiate(itemDrops[1], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-                    backup = true;
+                if(UnityEngine.Random.Range(0, upgradeDropChance) == 1)
+                    {
+                        Instantiate(itemDrops[1], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                        backup = true;
+                    }
+                else
+                    {
+                    if(UnityEngine.Random.Range(0, heartDropChance) == 1)
+                        {
+                            Instantiate(itemDrops[2], transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+                            backup = true;
+                        }
+                    }
                 }
         }
     }
