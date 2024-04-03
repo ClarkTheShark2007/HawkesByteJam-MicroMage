@@ -23,7 +23,8 @@ public class Spell : MonoBehaviour
 
     public GameObject projectilePrefab;
     protected bool casting = false;
-    protected int numProjectiles = 5; // Number of projectiles to fire
+    [SerializeField]public int slot = 0;
+    [SerializeField]protected int numProjectiles = 5; // Number of projectiles to fire
     [SerializeField] protected float projectileSpeed = 5f;
     [SerializeField] public float cooldownTime = 3f; // Cooldown time in seconds
     protected float projectileDuration = 2f; // Duration of the projectile in seconds
@@ -31,6 +32,7 @@ public class Spell : MonoBehaviour
     protected float spawnOffset = 1f; // Offset distance from the player
     protected float forceMagnitude = 10f; // Magnitude of the force applied to the projectile
     protected float circleRadius = 1.5f; // Radius of the circle path
+    protected float burstDelay = 0.1f;
     [System.NonSerialized]public float lastFireTime; // Time when the spell was last fired 
     public int damageAmount = 1;
 }
