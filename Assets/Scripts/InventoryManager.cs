@@ -9,6 +9,7 @@ public class InventoryManager : MonoBehaviour
     
     
     private Spell[] spells;
+    public int powerUpTime;
 
     // Start is called before the first frame update
     void Awake()
@@ -43,11 +44,34 @@ public class InventoryManager : MonoBehaviour
         if(spellIndex < spells.Length)
         {
             spells[spellIndex] = addSpell;
+            StartCoroutine(endPowerUp(spellIndex));
             return;
         }
         else
         {
             return;
         }
+    }
+    
+    public void resetSpell(int spellIndex)
+    {
+        if (spellIndex == 0)
+        {
+            Spell bolt;
+            bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[0];
+            spells[spellIndex] = bolt;
+        }
+        else 
+        {
+            Spell coneShot;
+            coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[1];
+            spells[spellIndex] = coneShot;
+        }
+    }
+
+    IEnumerator endPowerUp(int spellIndex)
+    {
+        yield return new WaitForSeconds(powerUpTime);
+        resetSpell(spellIndex);
     }
 }

@@ -26,7 +26,6 @@ public class SpellDrop : MonoBehaviour
         RandomSpell = UnityEngine.Random.Range(0, spellDrops.Length);
         if(other.gameObject.tag == "Player") 
         {
-            
             UnityEngine.Random.Range(0, spellDrops.Length);
             inventoryManager.setSpellAtIndex(spellDrops[RandomSpell], spellDrops[RandomSpell].slot);
             Destroy(gameObject, 1f);
