@@ -5788,7 +5788,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -6288,7 +6290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -6821,8 +6825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b83931c4664a4c17a81d1cf504d781f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellDrops:
-  - {fileID: 0}
 --- !u!50 &113426079
 Rigidbody2D:
   serializedVersion: 4
@@ -7338,7 +7340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -8262,7 +8266,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -9634,7 +9640,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -10298,7 +10306,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -11187,7 +11195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -11892,7 +11902,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -12459,7 +12471,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -13705,7 +13719,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -14084,7 +14100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -15113,7 +15131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -89657,7 +89677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -90050,7 +90072,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -91336,7 +91360,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -91761,7 +91787,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -92140,7 +92168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -92596,7 +92626,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -92974,7 +93006,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -93306,7 +93340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -93860,7 +93896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 10
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -94193,7 +94231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   currentHealth: 0
-  dropChance: 101112
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -94587,7 +94627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -94966,7 +95008,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -95828,7 +95872,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -95944,7 +95990,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -96107,7 +96155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 65
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -96597,6 +96647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 744807688}
+  slot: 0
+  numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 1
   damageAmount: 2
@@ -96613,6 +96665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 317655679}
+  slot: 0
+  numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 3
   damageAmount: 4
@@ -96629,6 +96683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 317655679}
+  slot: 0
+  numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 4
   damageAmount: 1
@@ -97323,7 +97379,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
@@ -97480,7 +97538,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  dropChance: 2
+  spellDropChance: 101
+  upgradeDropChance: 11
+  heartDropChance: 6
   itemDrops:
   - {fileID: 574439756}
   - {fileID: 113426076}
