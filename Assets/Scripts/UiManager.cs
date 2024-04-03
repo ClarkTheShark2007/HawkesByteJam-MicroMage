@@ -17,6 +17,7 @@ public class UiManager : MonoBehaviour
     {
         levelScreen.SetActive(true);
         Player.SetActive(false);
+        AudioListener.pause = true;
         StartCoroutine(WaitToLoad());
     }
 
@@ -25,6 +26,7 @@ public class UiManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         levelScreen.SetActive(false);
         Player.SetActive(true);
+        AudioListener.pause = false;
     }
 
 

@@ -9,10 +9,13 @@ public class TestEnemy : Enemy
     public float attackRadius;
     public Transform homePosition;
 
+    public Rigidbody2D Rigid;
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
+        Rigid = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -25,7 +28,7 @@ public class TestEnemy : Enemy
     {
         if(Vector3.Distance(target.position, transform.position) <= chaseRaidus && Vector3.Distance(target.position, transform.position) > attackRadius) 
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            Rigid.transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
     }
 
