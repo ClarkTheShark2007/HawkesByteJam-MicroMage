@@ -1,12 +1,41 @@
+using System.Collections;
 using UnityEngine;
 
-public class Bolt : Spell
+public class BurstSpell : Spell
 {
-    
-    private void Update()
+    private int burstCount = 0; // Counter for burst projectiles fired
+
+    public void Update()
     {
-        if (casting && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
+        if (casting)
         {
+            StartBurst();
+        }
+    }
+
+    private void StartBurst()
+    {
+        lastFireTime = Time.time;
+        StartCoroutine(FireBurstWithDelay());
+    }
+
+    IEnumerator FireBurstWithDelay()
+    {
+        for (int i = 0; i < numProjectiles; i++)
+        {
+            // Fire projectile
+            FireProjectile();
+
+            // Wait for the burst delay
+            yield return new WaitForSeconds(burstDelay);
+        }
+
+        // Reset casting flag after burst is complete
+        casting = false;
+    }
+
+    private void FireProjectile()
+    {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
 
@@ -28,8 +57,5 @@ public class Bolt : Spell
 
             Destroy(projectile, projectileDuration); // Destroy the projectile after the specified duration
             casting = false;
-            lastFireTime = Time.time; // Update last fire time
-        }
     }
-    
 }

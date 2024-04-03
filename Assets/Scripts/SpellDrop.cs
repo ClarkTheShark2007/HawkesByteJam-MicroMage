@@ -4,29 +4,31 @@ using UnityEngine;
 
 public class SpellDrop : MonoBehaviour
 {
-    [SerializeField] private Spell[] spellDrops;
+    private Spell[] spellDrops;
     private InventoryManager inventoryManager;
-
+    private int RandomSpell;
     // Start is called before the first frame update
     void Start()
     {
-        Spell circleBlast;
-        circleBlast = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[2];
-        spellDrops[0] = circleBlast;
+        Spell dropedSpell;
+        spellDrops = new Spell[4];
+        for(int i = 0; i < 4; i++)
+        {   
+            dropedSpell = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[i];
+            spellDrops[i] = dropedSpell;
+        }
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        RandomSpell = UnityEngine.Random.Range(0, spellDrops.Length);
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
-    {
+    {  
+        RandomSpell = UnityEngine.Random.Range(0, spellDrops.Length);
         if(other.gameObject.tag == "Player") 
         {
-            inventoryManager.setSpellAtIndex(spellDrops[0], 0);
+            
+            UnityEngine.Random.Range(0, spellDrops.Length);
+            inventoryManager.setSpellAtIndex(spellDrops[RandomSpell], spellDrops[RandomSpell].slot);
             Destroy(gameObject, 1f);
         }
     }
