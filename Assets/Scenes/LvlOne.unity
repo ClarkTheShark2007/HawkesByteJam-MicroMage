@@ -156,8 +156,6 @@ Transform:
   - {fileID: 744807696}
   - {fileID: 574439761}
   - {fileID: 317655686}
-  - {fileID: 637069003}
-  - {fileID: 924990543}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19471281
@@ -902,7 +900,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -5786,14 +5784,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &38095607
 Animator:
@@ -6288,14 +6287,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &44977817
 Animator:
@@ -7338,14 +7338,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &294262945
 Animator:
@@ -7837,6 +7838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3678a443e9378245b49dc9c91a14db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellIndex: 0
 --- !u!95 &317655682
 Animator:
   serializedVersion: 5
@@ -8264,14 +8266,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &328871770
 Animator:
@@ -9642,10 +9645,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &496905076
 Animator:
@@ -9779,10 +9783,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &496905079
 MonoBehaviour:
@@ -11197,10 +11202,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &607967072
 Animator:
@@ -11334,10 +11340,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &607967075
 MonoBehaviour:
@@ -11491,186 +11498,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &637069002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 637069003}
-  - component: {fileID: 637069008}
-  - component: {fileID: 637069007}
-  - component: {fileID: 637069006}
-  - component: {fileID: 637069005}
-  - component: {fileID: 637069004}
-  m_Layer: 0
-  m_Name: EnemyTwiters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &637069003
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.89, y: 1.3902206, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 15998939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &637069004
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 1}
-    newSize: {x: 0.5, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &637069005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf0ecc755e62c844bcc3b2b97231acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 1
---- !u!114 &637069006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d0bb5a34239724bbfebdedb07d2bc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
---- !u!95 &637069007
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d72d2af6b5bff6c41ab4e9ca5ca4b005, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &637069008
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637069002}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -2053580860, guid: 39d2b0214300e1c4ba4cc4fe321e73d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.5, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &646892382
 GameObject:
   m_ObjectHideFlags: 0
@@ -11904,10 +11731,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &661491802
 Animator:
@@ -12041,10 +11869,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &661491805
 MonoBehaviour:
@@ -12469,14 +12298,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &681347673
 Animator:
@@ -13126,6 +12956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3678a443e9378245b49dc9c91a14db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellIndex: 0
 --- !u!95 &744807692
 Animator:
   serializedVersion: 5
@@ -14427,200 +14258,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0452232, y: 0.76825285}
   m_EdgeRadius: 0
---- !u!1 &924990542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 924990543}
-  - component: {fileID: 924990549}
-  - component: {fileID: 924990548}
-  - component: {fileID: 924990547}
-  - component: {fileID: 924990546}
-  - component: {fileID: 924990545}
-  - component: {fileID: 924990544}
-  m_Layer: 0
-  m_Name: BossTwiters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &924990543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.63, y: 1.3902206, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 15998939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &924990544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c1444c39a912440b58aaf34c1e3518, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
---- !u!61 &924990545
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 1}
-    newSize: {x: 0.5, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &924990546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf0ecc755e62c844bcc3b2b97231acd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 1
---- !u!114 &924990547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d0bb5a34239724bbfebdedb07d2bc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
---- !u!95 &924990548
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d72d2af6b5bff6c41ab4e9ca5ca4b005, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &924990549
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924990542}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -2053580860, guid: 39d2b0214300e1c4ba4cc4fe321e73d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.5, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!114 &928807485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15133,10 +14770,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1217766667
 Animator:
@@ -15270,10 +14908,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &1217766670
 MonoBehaviour:
@@ -89679,10 +89318,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1455095744
 Animator:
@@ -89816,10 +89456,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &1455095747
 MonoBehaviour:
@@ -90070,14 +89711,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1480944387
 Animator:
@@ -91358,14 +91000,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1667415668
 Animator:
@@ -91785,14 +91428,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1728668096
 Animator:
@@ -92166,14 +91810,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1806997504
 Animator:
@@ -92628,10 +92273,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1885108587
 Animator:
@@ -92765,10 +92411,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &1885108590
 MonoBehaviour:
@@ -93008,10 +92655,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1911064620
 Animator:
@@ -93145,10 +92793,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &1911064623
 MonoBehaviour:
@@ -93338,14 +92987,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &1941065950
 Animator:
@@ -93898,10 +93548,11 @@ MonoBehaviour:
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &2123711533
 Animator:
@@ -94035,10 +93686,11 @@ MonoBehaviour:
   speed: 2
   stoppingDistance: 2
   retreatDistance: 5
+  projectileDuration: 5
   chaseRaidus: 10
   StartTimeBtwShots: 4
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 637069002}
+  projectile: {fileID: 3423669201252658112, guid: 574e0b36b321e48e4b6db8f1783280a7, type: 3}
   attackRadius: 0
 --- !u!114 &2123711536
 MonoBehaviour:
@@ -94229,14 +93881,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbede500ac40174db0d08902952bc5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   currentHealth: 0
   spellDropChance: 101
   upgradeDropChance: 11
-  heartDropChance: 6
+  heartDropChance: 2
   itemDrops:
-  - {fileID: 574439756}
-  - {fileID: 113426076}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &2131866317
 Animator:
@@ -97364,7 +97017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartTimeBtwShots: 5
   player: {fileID: 701365724077996074}
-  projectile: {fileID: 924990542}
+  projectile: {fileID: 8512770399588728329, guid: 41644f8bb47c9483488be20d54a050e0, type: 3}
 --- !u!114 &8459768588441121061
 MonoBehaviour:
   m_ObjectHideFlags: 0

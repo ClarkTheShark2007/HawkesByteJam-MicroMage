@@ -9,11 +9,11 @@ public class EnemyShoot : MonoBehaviour
     public float speed;
     public float stoppingDistance;
     public float retreatDistance;
-
+    [SerializeField]private float projectileDuration = 3;
     public float chaseRaidus;
 
     private float TimeBtwShots;
-
+    
     public float StartTimeBtwShots;
 
 
@@ -59,7 +59,8 @@ public class EnemyShoot : MonoBehaviour
 
         if(TimeBtwShots <= 0) {
 
-            Instantiate(projectile, transform.position, quaternion.identity);
+            GameObject shoot = Instantiate(projectile, transform.position, quaternion.identity);
+            Destroy(shoot, projectileDuration);
             TimeBtwShots = StartTimeBtwShots;
 
         }

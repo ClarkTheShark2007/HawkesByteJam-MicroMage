@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1923996344625346696}
   - component: {fileID: 5928687820888739597}
   - component: {fileID: 6751815369413589000}
-  - component: {fileID: 3439027019056134215}
   - component: {fileID: 2637158043604948711}
   m_Layer: 0
   m_Name: AlastorMagic
@@ -182,19 +181,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3439027019056134215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6882900284554118068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3678a443e9378245b49dc9c91a14db5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spellIndex: 0
 --- !u!82 &2637158043604948711
 AudioSource:
   m_ObjectHideFlags: 0
