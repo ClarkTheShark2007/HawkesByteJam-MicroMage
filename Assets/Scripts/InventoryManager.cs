@@ -14,7 +14,7 @@ public class InventoryManager : MonoBehaviour
     void Awake()
     {
         Spell coneShot, bolt;
-        bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[0];
+        bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[4];
         coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[1];
 
         spells = new Spell[]{bolt, coneShot};

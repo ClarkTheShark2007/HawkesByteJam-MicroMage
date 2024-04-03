@@ -1,11 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Bolt : Spell
+public class Firework : Spell
 {
-
+    
     private void Update()
     {
-        if (casting && Time.time >= lastFireTime + cooldownTime) // Left mouse button clicked and cooldown is over
+        if (casting) 
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = 0f;
@@ -17,8 +19,9 @@ public class Bolt : Spell
             Vector3 spawnPosition = playerPosition + direction * spawnOffset;
 
             GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
-            projectile.AddComponent<ProjectileCollisionHandler>();
-            projectile.GetComponent<ProjectileCollisionHandler>().spellIndex = slot;
+            projectile.AddComponent<FireworkCollisonHandler>();
+            projectile.GetComponent<FireworkCollisonHandler>().spellIndex = slot;
+            projectile.GetComponent<FireworkCollisonHandler>().projectilePrefab = projectilePrefab;
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             rb.velocity = direction * projectileSpeed; 

@@ -25,7 +25,8 @@ public class ConeShot : Spell
 
                 GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
                 projectile.AddComponent<ProjectileCollisionHandler>();
-
+                projectile.GetComponent<ProjectileCollisionHandler>().spellIndex = slot;
+                
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 rb.velocity = projectileDirection * projectileSpeed; 
 

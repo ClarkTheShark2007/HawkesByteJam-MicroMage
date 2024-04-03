@@ -16,7 +16,7 @@ public class Spell : MonoBehaviour
     public void upgradeSpell()
     {
         this.projectileSpeed = this.projectileSpeed*(1+UPGRADE_PERCENT);
-        this.cooldownTime = this.cooldownTime/(1-UPGRADE_PERCENT);
+        this.cooldownTime = this.cooldownTime*(1-UPGRADE_PERCENT);
         this.damageAmount = this.damageAmount+1;
     }
 

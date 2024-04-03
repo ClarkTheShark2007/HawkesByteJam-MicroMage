@@ -11,8 +11,8 @@ public class SpellDrop : MonoBehaviour
     void Start()
     {
         Spell dropedSpell;
-        spellDrops = new Spell[4];
-        for(int i = 0; i < 4; i++)
+        spellDrops = new Spell[5];
+        for(int i = 0; i < 5; i++)
         {   
             dropedSpell = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[i];
             spellDrops[i] = dropedSpell;

@@ -25,7 +25,8 @@ public class CircleBlast : Spell
 
                 GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
                 projectile.AddComponent<ProjectileCollisionHandler>();
-
+                projectile.GetComponent<ProjectileCollisionHandler>().spellIndex = slot;
+                
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 Vector3 velocity = (spawnPosition - playerPosition).normalized * projectileSpeed;
                 rb.velocity = Quaternion.Euler(0f, 0f, -90f) * velocity; // Rotate velocity for curve effect
