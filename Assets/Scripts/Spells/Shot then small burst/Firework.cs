@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Firework : Spell
 {
-    
+    [SerializeField]private GameObject FireworkPrefab;
     private void Update()
     {
         if (casting) 
@@ -21,7 +21,7 @@ public class Firework : Spell
             GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
             projectile.AddComponent<FireworkCollisonHandler>();
             projectile.GetComponent<FireworkCollisonHandler>().spellIndex = slot;
-            projectile.GetComponent<FireworkCollisonHandler>().projectilePrefab = projectilePrefab;
+            projectile.GetComponent<FireworkCollisonHandler>().projectilePrefab = FireworkPrefab;
 
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             rb.velocity = direction * projectileSpeed; 
