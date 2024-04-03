@@ -7,7 +7,7 @@ public class PowerUpDisplayManager : MonoBehaviour
     private int spellIndex=0;
 
 
-    public TextMeshProUGUI cooldownText; // Reference to the TextMeshProUGUI component
+    public TextMeshProUGUI PowerUpText; // Reference to the TextMeshProUGUI component
     private InventoryManager inventoryManager;
     private Spell magicProjectile; // Reference to the MagicProjectile script
 
@@ -15,14 +15,14 @@ public class PowerUpDisplayManager : MonoBehaviour
     {
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
         magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);    
-        if (magicProjectile != null) cooldownText.text = "Ready";
+        if (magicProjectile != null) PowerUpText.text = "Ready";
     }
 
     private void Update()
     {
             magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);
             // Update the cooldown UI text based on remaining cooldown time
-            float remainingCooldown = Mathf.Max(0f, magicProjectile.lastFireTime + magicProjectile.cooldownTime - Time.time);
-            cooldownText.text = remainingCooldown.ToString("F1"); // Display remaining cooldown time with one decimal place
+            float remainingPowerUp = magicProjectile.powerUpTime;
+            PowerUpText.text = remainingPowerUp.ToString("F1"); // Display remaining cooldown time with one decimal place
     }
 }

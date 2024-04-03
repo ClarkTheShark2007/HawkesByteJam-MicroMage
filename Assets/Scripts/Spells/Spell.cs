@@ -27,6 +27,7 @@ public class Spell : MonoBehaviour
     [SerializeField]protected int numProjectiles = 5; // Number of projectiles to fire
     [SerializeField] protected float projectileSpeed = 5f;
     [SerializeField] public float cooldownTime = 3f; // Cooldown time in seconds
+    public float powerUpTime = 10f;
     protected float projectileDuration = 2f; // Duration of the projectile in seconds
     protected float spreadAngle = 30f; // Spread angle for the projectiles
     protected float spawnOffset = 1f; // Offset distance from the player

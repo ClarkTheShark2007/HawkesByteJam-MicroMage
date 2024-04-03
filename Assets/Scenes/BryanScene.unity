@@ -27337,6 +27337,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917441342}
+  - component: {fileID: 1917441344}
+  - component: {fileID: 1917441343}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -27363,6 +27365,34 @@ Transform:
   - {fileID: 601098483}
   m_Father: {fileID: 1689659825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917441343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917441341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9093d3b043f9942059db96f76c4519fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellIndex: 1
+  cooldownText: {fileID: 601098484}
+--- !u!114 &1917441344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917441341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9093d3b043f9942059db96f76c4519fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellIndex: 0
+  cooldownText: {fileID: 298980278}
 --- !u!1 &1929852787
 GameObject:
   m_ObjectHideFlags: 0
@@ -28487,6 +28517,7 @@ MonoBehaviour:
   numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 0.5
+  powerUpTime: 10
   damageAmount: 2
 --- !u!114 &5867074321208132811
 MonoBehaviour:
@@ -28505,6 +28536,7 @@ MonoBehaviour:
   numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 3
+  powerUpTime: 10
   damageAmount: 4
 --- !u!114 &5867074321208132813
 MonoBehaviour:
@@ -28518,7 +28550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d04c8f102a1f446a1d0188846ab2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpTime: 0
 --- !u!114 &5867074321208132814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28536,6 +28567,7 @@ MonoBehaviour:
   numProjectiles: 10
   projectileSpeed: 5
   cooldownTime: 4
+  powerUpTime: 10
   damageAmount: 1
 --- !u!114 &5867074321208132815
 MonoBehaviour:
@@ -28554,6 +28586,7 @@ MonoBehaviour:
   numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 1
+  powerUpTime: 10
   damageAmount: 1
 --- !u!114 &5867074321208132816
 MonoBehaviour:
@@ -28572,6 +28605,7 @@ MonoBehaviour:
   numProjectiles: 5
   projectileSpeed: 5
   cooldownTime: 5
+  powerUpTime: 10
   damageAmount: 2
   FireworkPrefab: {fileID: 2850817912638873074, guid: 6de61f9dec26ce54f899db969d668925, type: 3}
 --- !u!1660057539 &9223372036854775807

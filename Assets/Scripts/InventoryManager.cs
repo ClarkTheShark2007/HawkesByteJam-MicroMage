@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     
     
     private Spell[] spells;
-    public int powerUpTime;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -71,7 +71,7 @@ public class InventoryManager : MonoBehaviour
 
     IEnumerator endPowerUp(int spellIndex)
     {
-        yield return new WaitForSeconds(powerUpTime);
+        yield return new WaitForSeconds(getSpellAtIndex(spellIndex).powerUpTime);
         resetSpell(spellIndex);
     }
 }
