@@ -5639,6 +5639,39 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 1002007842}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &37376287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37376288}
+  m_Layer: 0
+  m_Name: RoomTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37376288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37376287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1642780942}
+  - {fileID: 510810969}
   m_Father: {fileID: 1485765633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &38095602
@@ -5694,7 +5727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -6029,7 +6062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -6469,7 +6502,7 @@ Transform:
   m_GameObject: {fileID: 99765134}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5148644, y: 6.4769897, z: -0.03608632}
+  m_LocalPosition: {x: 12.194426, y: 5.482115, z: -2.20347}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6484,7 +6517,15 @@ Transform:
   - {fileID: 1480944384}
   - {fileID: 1806997501}
   - {fileID: 1941065957}
-  m_Father: {fileID: 0}
+  - {fileID: 1911064627}
+  - {fileID: 1217766674}
+  - {fileID: 607967079}
+  - {fileID: 1885108594}
+  - {fileID: 1455095751}
+  - {fileID: 496905083}
+  - {fileID: 2123711540}
+  - {fileID: 661491809}
+  m_Father: {fileID: 1485765633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &115988260
 GameObject:
@@ -6512,12 +6553,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115988260}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -9.17, y: 29.57, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &115988262
 BoxCollider2D:
@@ -6684,7 +6725,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &184184571
 BoxCollider2D:
@@ -6776,7 +6817,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &242928755
 MonoBehaviour:
@@ -6863,12 +6904,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255272879}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 19.72, y: 29.57, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &255272881
 BoxCollider2D:
@@ -6967,7 +7008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -7498,7 +7539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -9049,7 +9090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -9341,11 +9382,11 @@ Transform:
   m_GameObject: {fileID: 496905073}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.43, y: 30.11, z: 0}
+  m_LocalPosition: {x: 21.915136, y: 23.63301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &510810968
 GameObject:
@@ -9378,7 +9419,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.5314062, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 37376288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &510810970
 MonoBehaviour:
@@ -9695,12 +9736,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524354391}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 19.35, y: 29.57, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &524354393
 BoxCollider2D:
@@ -9792,7 +9833,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &544125159
 BoxCollider2D:
@@ -10018,7 +10059,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &598035103
 BoxCollider2D:
@@ -10306,7 +10347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -10598,11 +10639,11 @@ Transform:
   m_GameObject: {fileID: 607967069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.37, y: 46.34, z: 0}
+  m_LocalPosition: {x: 20.855137, y: 39.86301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646892382
 GameObject:
@@ -10789,7 +10830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -11081,11 +11122,11 @@ Transform:
   m_GameObject: {fileID: 661491799}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.64, y: 34.93, z: 0}
+  m_LocalPosition: {x: -10.154864, y: 28.45301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678749669
 GameObject:
@@ -11268,7 +11309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -11709,7 +11750,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &689891710
 BoxCollider2D:
@@ -11892,7 +11933,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverMenu: {fileID: 306604985}
   levelScreen: {fileID: 472298651}
-  Player: {fileID: 4071988985966608999}
   bossTheme: {fileID: 678749671}
   mainTheme: {fileID: 1551155821}
 --- !u!114 &759682485
@@ -11954,7 +11994,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &771099075
 BoxCollider2D:
@@ -13131,6 +13171,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944802142}
   m_CullTransparentMesh: 1
+--- !u!1 &1002007841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002007842}
+  m_Layer: 0
+  m_Name: Room Transfers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1002007842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002007841}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 242928754}
+  - {fileID: 37002172}
+  - {fileID: 1534218482}
+  - {fileID: 255272880}
+  - {fileID: 598035102}
+  - {fileID: 689891709}
+  - {fileID: 524354392}
+  - {fileID: 544125158}
+  - {fileID: 184184570}
+  - {fileID: 1411482627}
+  - {fileID: 1319683470}
+  - {fileID: 771099074}
+  - {fileID: 1822001962}
+  - {fileID: 115988261}
+  - {fileID: 1254838438}
+  m_Father: {fileID: 1485765633}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067558680
 GameObject:
   m_ObjectHideFlags: 0
@@ -13507,7 +13593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -13799,11 +13885,11 @@ Transform:
   m_GameObject: {fileID: 1217766664}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.24, y: 46.34, z: 0}
+  m_LocalPosition: {x: 9.725136, y: 39.86301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1254838437
 GameObject:
@@ -13836,7 +13922,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1254838439
 BoxCollider2D:
@@ -87544,12 +87630,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319683469}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 14.26, y: 43.56, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1319683471
 BoxCollider2D:
@@ -87770,12 +87856,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411482626}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.81, y: 43.56, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 13.810001, y: 43.56, z: -0.04867077}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1411482628
 BoxCollider2D:
@@ -87874,7 +87960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -88166,11 +88252,11 @@ Transform:
   m_GameObject: {fileID: 1455095741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.02, y: 30.11, z: 0}
+  m_LocalPosition: {x: 11.5051365, y: 23.63301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480944383
 GameObject:
@@ -88225,7 +88311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -88536,24 +88622,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 242928754}
-  - {fileID: 37002172}
-  - {fileID: 1534218482}
-  - {fileID: 255272880}
-  - {fileID: 598035102}
-  - {fileID: 689891709}
-  - {fileID: 524354392}
-  - {fileID: 544125158}
-  - {fileID: 184184570}
-  - {fileID: 1411482627}
-  - {fileID: 1319683470}
-  - {fileID: 771099074}
-  - {fileID: 1822001962}
-  - {fileID: 115988261}
-  - {fileID: 1254838438}
-  - {fileID: 1642780942}
-  - {fileID: 510810969}
+  - {fileID: 1002007842}
+  - {fileID: 37376288}
   - {fileID: 1067558681}
+  - {fileID: 99765135}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514020841
@@ -88634,7 +88706,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1534218483
 BoxCollider2D:
@@ -89390,7 +89462,7 @@ Transform:
   m_LocalScale: {x: 3.1664062, y: 0.5314062, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 37376288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1642780943
 MonoBehaviour:
@@ -89601,7 +89673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -89936,7 +90008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -90271,7 +90343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -90579,12 +90651,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822001961}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -8.92, y: 29.57, z: -0.04867077}
-  m_LocalScale: {x: 3.1664062, y: 0.2375, z: 1}
+  m_LocalScale: {x: 3.1664064, y: 0.2375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1485765633}
+  m_Father: {fileID: 1002007842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1822001963
 BoxCollider2D:
@@ -90758,7 +90830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -91050,11 +91122,11 @@ Transform:
   m_GameObject: {fileID: 1885108584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.37, y: 41.34, z: 0}
+  m_LocalPosition: {x: 20.855137, y: 34.86301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1898729174
 GameObject:
@@ -91303,7 +91375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -91595,11 +91667,11 @@ Transform:
   m_GameObject: {fileID: 1911064617}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.08, y: 34.93, z: 0}
+  m_LocalPosition: {x: -1.4348645, y: 28.45301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1941065948
 GameObject:
@@ -91639,7 +91711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -92149,7 +92221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -92441,11 +92513,11 @@ Transform:
   m_GameObject: {fileID: 2123711530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.18, y: 41.43, z: 0}
+  m_LocalPosition: {x: 8.665136, y: 34.95301, z: 0.03608632}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 99765135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2131866315
 GameObject:
@@ -92485,7 +92557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  spellDropChance: 101
+  spellDropChance: 20
   upgradeDropChance: 11
   heartDropChance: 2
   itemDrops:
@@ -94899,7 +94971,7 @@ MonoBehaviour:
   projectileSpeed: 5
   cooldownTime: 4
   powerUpTime: 10
-  damageAmount: 1
+  damageAmount: 5
 --- !u!114 &5867074321208132811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94930,7 +95002,7 @@ MonoBehaviour:
   projectileSpeed: 5
   cooldownTime: 3
   powerUpTime: 10
-  damageAmount: 1
+  damageAmount: 2
   FireworkPrefab: {fileID: 2850817912638873074, guid: 6de61f9dec26ce54f899db969d668925, type: 3}
 --- !u!114 &5867074321208132813
 MonoBehaviour:
@@ -94950,7 +95022,7 @@ MonoBehaviour:
   projectileSpeed: 5
   cooldownTime: 3
   powerUpTime: 10
-  damageAmount: 1
+  damageAmount: 3
 --- !u!114 &5867074321208132814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95857,21 +95929,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 759682483}
   - {fileID: 701365724077996074}
   - {fileID: 1281419729}
+  - {fileID: 759682483}
   - {fileID: 1485765633}
   - {fileID: 1959305881}
   - {fileID: 411996148}
   - {fileID: 6612929651580965666}
   - {fileID: 1260862217}
   - {fileID: 4041082295789836785}
-  - {fileID: 99765135}
-  - {fileID: 1911064627}
-  - {fileID: 1217766674}
-  - {fileID: 607967079}
-  - {fileID: 1885108594}
-  - {fileID: 1455095751}
-  - {fileID: 496905083}
-  - {fileID: 2123711540}
-  - {fileID: 661491809}
