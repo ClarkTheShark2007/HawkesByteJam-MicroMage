@@ -9398,7 +9398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510810969}
   - component: {fileID: 510810971}
-  - component: {fileID: 510810970}
+  - component: {fileID: 510810972}
   m_Layer: 0
   m_Name: RoomTrigger (1)
   m_TagString: Untagged
@@ -9421,18 +9421,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 37376288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &510810970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510810968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c2a9b7433b622446bda9a1edc44e371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &510810971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9478,6 +9466,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &510810972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510810968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b226b81bf0f10af46a263813a4f57ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &513733176
 GameObject:
   m_ObjectHideFlags: 0
@@ -12242,13 +12242,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &797579006
 Animator:
@@ -12697,13 +12698,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &878884701
 Animator:
@@ -92907,13 +92909,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &2134496022
 Animator:
@@ -93287,13 +93290,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &2136658314
 Animator:
@@ -94149,13 +94153,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!61 &2085150678924817739
 BoxCollider2D:
@@ -94267,13 +94272,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!50 &2341985069971402527
 Rigidbody2D:
@@ -95712,13 +95718,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!95 &9145164969586532532
 Animator:
@@ -95871,13 +95878,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 6
   spellDropChance: 101
   upgradeDropChance: 11
   heartDropChance: 6
   itemDrops:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5387508184958212463, guid: 0b876e6003f1c524487705a41897e55c, type: 3}
+  - {fileID: 2235295930756076915, guid: d6a33548caaf3de4e81f6cb9a7294ddd, type: 3}
+  - {fileID: 2961807188424809877, guid: 4dd615d0f70e46844be07f703b996a87, type: 3}
   anim: {fileID: 0}
 --- !u!61 &9216427129504827082
 BoxCollider2D:
