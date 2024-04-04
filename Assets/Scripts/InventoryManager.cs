@@ -15,8 +15,8 @@ public class InventoryManager : MonoBehaviour
     void Awake()
     {
         Spell coneShot, bolt;
-        bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[0];
-        coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[1];
+        bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[3];
+        coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[4];
 
         spells = new Spell[]{bolt, coneShot};
     }
@@ -57,13 +57,13 @@ public class InventoryManager : MonoBehaviour
         if (spellIndex == 0)
         {
             Spell bolt;
-            bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[0];
+            bolt = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[3];
             spells[spellIndex] = bolt;
         }
         else 
         {
             Spell coneShot;
-            coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[1];
+            coneShot = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[4];
             spells[spellIndex] = coneShot;
         }
     }

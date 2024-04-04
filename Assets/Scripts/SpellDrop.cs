@@ -12,8 +12,8 @@ public class SpellDrop : MonoBehaviour
     void Start()
     {
         Spell dropedSpell;
-        spellDrops = new Spell[5];
-        for(int i = 0; i < 5; i++)
+        spellDrops = new Spell[3];
+        for(int i = 0; i < 3; i++)
         {   
             dropedSpell = GameObject.FindGameObjectWithTag("Player")?.GetComponents<Spell>()[i];
             spellDrops[i] = dropedSpell;
@@ -30,7 +30,7 @@ public class SpellDrop : MonoBehaviour
         {
             UnityEngine.Random.Range(0, spellDrops.Length);
             powerUpManager.startPowerUp(spellDrops[RandomSpell], spellDrops[RandomSpell].slot);
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
         }
     }
 }

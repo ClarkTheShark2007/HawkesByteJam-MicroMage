@@ -10,8 +10,8 @@ public class EnenmyHealth : MonoBehaviour
     public static event Action OnEnemyDamaged;
     public static event Action OnEnemyDeath;
 
-    [SerializeField]private int maxHealth;
-    [SerializeField]private int currentHealth;
+    [SerializeField]private int maxHealth = 10;
+    [SerializeField]private int currentHealth = 10;
 
     [SerializeField]private int spellDropChance = 101;
     [SerializeField]private int upgradeDropChance = 11;

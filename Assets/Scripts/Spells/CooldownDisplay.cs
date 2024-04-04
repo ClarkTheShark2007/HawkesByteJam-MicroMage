@@ -14,8 +14,6 @@ public class CooldownDisplay : MonoBehaviour
      private void Start()
     {
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
-        magicProjectile =  inventoryManager.getSpellAtIndex(spellIndex);    
-        if (magicProjectile != null) cooldownText.text = "Ready";
     }
 
     private void Update()
