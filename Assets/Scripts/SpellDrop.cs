@@ -7,6 +7,7 @@ public class SpellDrop : MonoBehaviour
     private Spell[] spellDrops;
     private InventoryManager inventoryManager;
     private int RandomSpell;
+    private PowerUpManager powerUpManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class SpellDrop : MonoBehaviour
             spellDrops[i] = dropedSpell;
         }
         inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
+        powerUpManager = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PowerUpManager>(); 
         RandomSpell = UnityEngine.Random.Range(0, spellDrops.Length);
     }
 
@@ -27,7 +29,7 @@ public class SpellDrop : MonoBehaviour
         if(other.gameObject.tag == "Player") 
         {
             UnityEngine.Random.Range(0, spellDrops.Length);
-            inventoryManager.setSpellAtIndex(spellDrops[RandomSpell], spellDrops[RandomSpell].slot);
+            powerUpManager.startPowerUp(spellDrops[RandomSpell], spellDrops[RandomSpell].slot);
             Destroy(gameObject, 1f);
         }
     }

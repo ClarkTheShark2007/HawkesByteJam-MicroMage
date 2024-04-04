@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class PowerUpManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private InventoryManager inventoryManager;
+    public bool[] poweredUp; //hes just powered up like that
+    public float[] Lastpoweruptime;
+     private void Start()
     {
-        
+        inventoryManager  = GameObject.FindGameObjectWithTag("Player")?.GetComponent<InventoryManager>(); 
+        Lastpoweruptime = new[]{0f, 0f};
+        poweredUp = new[]{false, false};
+    }
+    public void startPowerUp(Spell addSpell, int spellIndex)
+    {
+        StartCoroutine(endPowerUp(spellIndex));
+        inventoryManager.setSpellAtIndex(addSpell, spellIndex);
+        Lastpoweruptime[spellIndex] = Time.time;
+        poweredUp[spellIndex] = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator endPowerUp(int spellIndex)
     {
-        
+        yield return new WaitForSeconds(inventoryManager.getSpellAtIndex(spellIndex).powerUpTime);
+        inventoryManager.resetSpell(spellIndex);
+        poweredUp[spellIndex] = false;
     }
 }

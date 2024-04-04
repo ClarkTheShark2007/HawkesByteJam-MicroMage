@@ -44,7 +44,6 @@ public class InventoryManager : MonoBehaviour
         if(spellIndex < spells.Length)
         {
             spells[spellIndex] = addSpell;
-            StartCoroutine(endPowerUp(spellIndex));
             return;
         }
         else
@@ -69,9 +68,5 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    IEnumerator endPowerUp(int spellIndex)
-    {
-        yield return new WaitForSeconds(getSpellAtIndex(spellIndex).powerUpTime);
-        resetSpell(spellIndex);
-    }
+    
 }
